@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-html</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+         $(document).ready(
+            function()
+            {
+                   $(".btn1").click(
+                    function(){
+                        var val1=$(".para").html()
+                        alert(val1)
+                    }
+                   )
+                   $(".btn2").click(
+                    function(){
+                        var val2=$(".para1").text()
+                        alert(val2)
+                    }
+                   )
+                   $(".btn3").click(
+                    function(){
+                        var val3=$(".txt").val()
+                        alert(val3)
+                    }
+                   )
+                   
+                   $(".btn4").click(
+                    function(){
+                        var val4=$(".anc").attr("href")
+                        alert(val4)
+                    }
+                   )
+                   
+            }
+         )
+    </script>
+</head>
+<body>
+    <button class="btn1">Get Html</button>
+    <p class="para">This is a <strong>paragraph</strong></p>
+
+    <button class="btn2">Get Text</button>
+    <p class="para1">This is a <strong>paragraph</strong></p>
+
+
+    <button class="btn3">Get value</button>
+    <input type="text" placeholder="name" class="txt"><br><br>
+
+
+    <button class="btn4">Get Attribute</button>
+    <a href="https://www.flipkart.com/" class="anc">flipkart</a>
+
+    
+</body>
+</html>

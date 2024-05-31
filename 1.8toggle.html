@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <style>
+        .para{
+            color: red;
+            background-color: aqua;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $(".btn").click(
+                    function(){
+                    // $(".para").hide("slow")
+                    $(".para").toggle(3000)
+                }
+                )
+            }
+        )
+
+    </script>
+</head>
+<body>
+    <button class="btn">toggle</button>
+    <p class="para"> This is my world </p>
+</body>
+</html>

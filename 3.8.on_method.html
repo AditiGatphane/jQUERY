@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On method</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+
+                // 1
+                // $(".btn").on("click",function(){
+                //     $(".para").html("Button on Clicked!!!!!")
+                // })
+
+
+                // 2
+
+                $(".btn").on({click:function(){$(".para").html("Button on click!!!!!")},
+                mouseover:function(){$(".btn").css("color","red")},mouseout:function(){$(".btn").css("color","black")}})
+            }
+        )
+    </script>
+</head>
+<body>
+    <button class="btn">Click</button>
+    <p class="para"></p>
+</body>
+</html>

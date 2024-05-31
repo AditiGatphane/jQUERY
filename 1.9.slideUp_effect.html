@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideup</title>
+    <style>
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading1
+        {
+          width: 40%;
+          background-color: aquamarine;
+          padding: 10px 0px;
+          text-align: center;
+          border: 2px solid black;
+          color: black;
+          box-sizing: border-box;
+
+
+
+        }
+        .heading2
+        {
+            width: 40%;
+            background-color: blanchedalmond;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px black solid;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready
+       (
+        function()
+        {
+            $(".heading1").click
+            (
+                function()
+                {
+                    $(".heading2").slideUp("slow") 
+                }
+            )
+
+        }
+       )
+    </script>
+</head>
+<body>
+    <div class="heading1"> Heading Text</div>
+    <div class="heading2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aspernatur dolorum itaque aperiam autem perferendis, rem possimus nihil rerum maiores sed amet et doloribus voluptatum beatae fugiat consequuntur mollitia quae.
+        Tenetur cum, inventore ex vero ipsum dicta laudantium aliquid totam quidem iusto recusandae obcaecati consequatur iure praesentium voluptatibus aperiam fuga possimus maiores sit! Debitis sit voluptates nemo, rem omnis necessitatibus.
+        Nihil assumenda, quibusdam nisi dicta alias necessitatibus explicabo porro commodi natus minima quisquam quo tempore quod quae praesentium culpa? Harum quam dolorum eligendi eius obcaecati perferendis explicabo odio maxime amet.
+        Eveniet aliquam eaque dignissimos suscipit autem beatae quisquam consequuntur consequatur obcaecati sapiente, veritatis ipsa quaerat vel, odio fugiat illo itaque dolores voluptate eos. Quia qui magni nihil aut assumenda repudiandae.
+        Dolor id consectetur a provident, iure explicabo veritatis, totam obcaecati, illo repudiandae fugiat aut architecto voluptatum? Corporis alias officiis, itaque temporibus, a nisi cupiditate molestias expedita eligendi, quibusdam omnis hic.
+        Reprehenderit tempore tenetur asperiores magnam soluta adipisci accusamus, iusto neque, dicta quam quo cum beatae quae aliquam, ipsum libero odio delectus saepe! Officia maiores sapiente culpa facilis, non nam vitae!</p>
+    </div>
+</body>
+</html>

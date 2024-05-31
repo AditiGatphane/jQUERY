@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_class</title>
+    <style>
+        .demo
+        {
+            color: red;
+        }
+        .test
+        {
+            background-color: aqua;
+        }
+        .sample
+        {
+            font-size: larger;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function()
+            {
+                $("button").click
+                (
+                    function()
+                    {
+                       $("#heading1").addClass("demo")
+                       $("#para").removeClass("demo")
+                       $("#span").toggleClass("test")
+                    }
+                )
+
+            }
+        )
+    </script>
+</head>
+<body>
+    <button>jQuery  - class</button>
+    <h1 id="heading1">jQuery--class</h1>
+    <p id="para" class="para1">Pargraph</p>
+    <span id="span">Span1</span>
+</body>
+</html>

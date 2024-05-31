@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeout</title>
+    <style>
+        .div{
+            width: 10%;
+            height: 100px;
+            margin-top: 20px
+           
+        }
+        .div1{
+            background-color:blueviolet ;
+
+        }
+        .div2{
+            background-color: brown;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function()
+            {
+                $(".btn").click
+                (
+                    function()
+                    {
+                        $(".div1").fadeOut("slow")
+                        $(".div2").hide("slow")
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <button class="btn">FadeOut</button>
+    <div class="div div1"></div>
+    <div class="div div2"></div>
+</body>
+</html>

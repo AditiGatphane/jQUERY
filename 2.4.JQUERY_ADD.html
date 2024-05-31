@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready
+        (
+            function()
+            {
+                $(".btn").click
+                (
+                    function()
+                    {
+                        // $("#list").prepend("<li>New Value</li>")
+                        // $("#list").append("<li>New Value</li>")
+                        // $("#list").after("<ol type='i'><li>New Value</li></ol>")
+                        $("#list").before("<ol type='i'><li>New Value</li></ol>")
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <button class="btn">Click</button>
+    <ol id="list">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>AboutUs</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $(".btn").click(
+                    function()
+                    {
+                        // $("h3").siblings().css("color","red")
+                        // $("h3").siblings("p").css("color","red")
+                        // $("h3").next("").css("color","red")
+                        // $("h3").nextAll().css("color","red")
+                        // $("h3").nextUntil("h5").css("color","red")
+
+
+
+                        // $("h3").prev().css("color","red")
+                        // $("h3").prevall().css("color","red")
+                        // $("h3").prevUntil("h3").css("color","red")
+
+
+                        // $("p").first().css("color","red")
+                        // $("p").last().css("color","red")
+                        //$("p").eq(1).css("color","red")
+                        // $("span").filter(".span1").css("color","red")
+                        $("span").not(".span1").css("color","red")
+
+                    }
+                )
+               
+            }
+        )
+    </script>
+</head>
+<body>
+    <button class="btn">Click</button>
+    <h1>Heading1</h1>
+    <h2>Heading 2</h2>
+    <p>Pragraph1</p>
+    <span>Span1</span>
+    <h3>heading 3</h3>
+    <p>paragraph 3</p>
+    <span class="span1">Span2</span>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+</body>
+</html>

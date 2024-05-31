@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div1{
+            width: 10%;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+            position: relative;
+        }
+    </style>
+    <title>stop</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+    $(document).ready
+    (
+       function() 
+       {
+                 $(".btn1").click
+                 (
+                     function()
+                     {
+                        $(".div1").animate({width:'20%'},2000)
+                       $(".div1").animate({height:'200px'},1000)
+                       $(".div1").animate({left:'40%'},2000)
+                          $("div1").animate({opacity:'0.4'},1000)
+                      }
+                  )
+                  $(".stp1").click(
+                    
+                        function(){
+                            $(".div1").stop()
+                        }
+                    
+                  )
+                  $(".stp2").click(
+                    
+                    function(){
+                        $(".div1").stop(true)
+                    }
+                
+              )
+              $(".stp3").click(
+                    
+                    function(){
+                        $(".div1").stop(true,true)
+                    }
+                
+              )
+        }
+    )
+    </script>
+</head>
+<body>
+    <button Class="btn1">Start</button>
+    <button Class="stp1">Stop withount paramerter</button>
+    <button Class="stpn2">Stop with one paramerter</button>
+    <button Class="stp3">Stop with two paramerter</button>
+    <div class="div1"></div>
+</body>
+</html>
